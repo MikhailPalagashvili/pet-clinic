@@ -1,13 +1,5 @@
 package com.mikhailpalagashvili.petclinic.services;
 
-import com.mikhailpalagashvili.petclinic.model.Owner;
+public interface Vet extends CrudService<Vet, Long> {
 
-import java.util.Set;
-
-public interface Vet {
-    Vet findById(Long id);
-
-    Vet save(Owner owner);
-
-    Set<Vet> findAll();
 }
